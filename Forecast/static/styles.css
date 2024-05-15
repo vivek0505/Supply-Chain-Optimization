@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9f7; /* Lighter shade of green */
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #008000; /* Dark green color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adding subtle shadow */
+}
+
+form {
+    margin: 0 auto;
+    width: 60%; /* Increased width for better readability */
+    text-align: center;
+}
+
+select, input, button {
+    margin-bottom: 15px; /* Increased spacing between elements */
+    padding: 10px;
+    border: 1px solid #ddd; /* Adding subtle border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #008000; /* Dark green color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #005000; /* Darker green color on hover */
+}
+
+#prediction {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333; /* Darker text color */
+}

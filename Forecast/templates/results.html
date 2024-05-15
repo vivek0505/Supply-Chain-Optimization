@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Center-align the table */
+        table {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predicted Sales</h1>
+    <table>
+        <tr>
+            <th>Medicine Category</th>
+            <th>Predicted Sales</th>
+        </tr>
+        {% for category, prediction in predictions.items() %}
+        <tr>
+            <td>{{ category }}</td>
+            <td>{{ prediction }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
